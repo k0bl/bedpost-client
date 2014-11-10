@@ -1,0 +1,151 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+"""
+This is a dynamic http server for saving configutations. At the 
+moment, I will keep the configuration (admin) backend portion 
+separate from the main view application.
+"""
+import json
+import requests
+import pyjsonrpc
+import sqlite3
+#Globals
+database = 'bedposttest.db'
+# conn = sqlite3.connect('pyjsonrpctest2.db')
+# c = conn.cursor()
+
+# #try to insert values into 
+# c.execute("INSERT INTO locations VALUES ('longbeach', '90806', 'lgb')")
+
+
+class RequestHandler(pyjsonrpc.HttpRequestHandler):
+    
+    @pyjsonrpc.rpcmethod
+    def savecpc(self, cpcname, cpchostname, cpcusername, cpcpassword, cpcdatadir, cpcfqdn, cpclocation):
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        print cpcname
+        print cpchostname
+        print cpcusername
+        print cpcpassword
+        print cpcdatadir
+        print cpcfqdn
+        print cpclocation
+        dbcpcname = str(cpcname)
+        dbcpchostname = str(cpchostname)
+        dbcpcusername = str(cpcusername)
+        dbcpcpassword = str(cpcpassword)
+        dbcpcdatadir = str (cpcdatadir)
+        dbcpcfqdn = str(cpcfqdn)
+        dbcpclocation = str (cpclocation)
+
+        #Collection PCs Table, first drop if created, then create a new one. The colleciton_pcs take a 
+        #forgeign key from the locations table.
+        c.execute("DROP TABLE IF EXISTS collection_pcs")
+        c.execute('''CREATE TABLE collection_pcs
+        (cpc_id  INTEGER PRIMARY KEY ASC, cpc_name text, cpc_hostname text, cpc_username text, cpc_password text, cpc_datadir text, cpc_fqdn text,  cpc_location text, FOREIGN KEY(cpc_location) REFERENCES locations(location_id)''')
+        c.execute ("INSERT INTO location VALUES (null, ?, ?, ?);", (dbcpcname, dbcpchostname, dbcpcpassword, dbcpcdatadir, dbcpcfqdn, dbcpclocation))        
+
+    @pyjsonrpc.rpcmethod
+    def saveone(self, loconame, locozip):
+        print loconame 
+        print locozip
+        return loconame, locozip
+
+    @pyjsonrpc.rpcmethod
+    def saveloco(self, loconame, locozip, locoaccr):
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        
+        #persist new values to sqlite3 database
+        dbloconame = str(loconame)
+        dblocozip = str(locozip)
+        dblocoaccr = str(locoaccr)
+        print "loconame is:", dbloconame 
+        print "locozip is:", dblocozip
+        print "locoaccr is:", dblocoaccr
+        
+        #Enable this when testing persistance, so the old value sets are removed each time.
+        
+        #Locations table, first drop if created, then create new one
+        # c.execute("DROP TABLE IF EXISTS locations")
+        # c.execute('''CREATE TABLE locations
+        # (location_id  INTEGER PRIMARY KEY ASC, location_name text, location_zip text, accronym text)''')
+        # print "Tables are done"
+<<<<<<< HEAD
+        
+        c.execute("INSERT INTO locations VALUES (null, ?, ?, ?);", (dbloconame, dblocozip, dblocoaccr))
+        print "Insertion is done...giggity"
+        conn.commit()
+
+        last_id = c.lastrowid
+        
+        print "Last ID is set to last inserted row"
+        print last_id
+
+        print "Printing selection"
+        print c.execute("SELECT * FROM locations WHERE location_id = ?", (last_id,))
+        row = c.fetchone()
+        
+        # print "Selection is done"
+        # print "Printing dbout"
+        # print dbout
+
+=======
+        
+        c.execute("INSERT INTO locations VALUES (null, ?, ?, ?);", (dbloconame, dblocozip, dblocoaccr))
+        print "Insertion is done...giggity"
+        
+        last_id = c.lastrowid
+        
+        print "Last ID is set to last inserted row"
+        print last_id
+
+        dbout = c.execute('SELECT * FROM locations WHERE location_id = ?', (last_id))
+        print "Selection is done"
+        print "Printing dbout"
+        print dbout
+        conn.commit()
+>>>>>>> eaf8370... trying to get response back to client
+        conn.close()
+        return row
+
+
+    #attempt to write a return method that just sends the locations objects back to the client
+    @pyjsonrpc.rpcmethod
+    def returnloco(self):
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        for row in c.execute('SELECT * FROM locations'):
+            print row
+            return row
+
+<<<<<<< HEAD
+=======
+
+    #attempt to write a return method that just sends the locations objects back to the client
+    @pyjsonrpc.rpcmethod
+    def returnloco(self):
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        for row in c.execute('SELECT * FROM locations'):
+            print row
+            return row
+
+>>>>>>> eaf8370... trying to get response back to client
+
+
+# Threading HTTP-Server
+http_server = pyjsonrpc.ThreadingHttpServer(
+    server_address = ('localhost', 8080),
+    RequestHandlerClass = RequestHandler
+)
+print "Starting HTTP server ..."
+print "URL: http://localhost:8080"
+
+try:
+    http_server.serve_forever()
+except KeyboardInterrupt:
+        http_server.shutdown()
+print "Stopping HTTP Server"
