@@ -32,9 +32,10 @@ class Main(QtGui.QMainWindow):
         optionsMenu = menubar.addMenu('&Options')
         optionsMenu.addAction(configAction)
 
-
         self.logo = imageLayout()
+        self.centapp = TransfersLayout()
         self.setMenuWidget(menubar)
+        self.setCentralWidget(self.centapp)
         self.setGeometry(300, 300, 300, 200)
         self.setWindowTitle('Bedpost Client beta 0.0.2')
         self.show()
@@ -42,6 +43,81 @@ class Main(QtGui.QMainWindow):
     def configClick(self):
         self.baseconflayout = BaseConfigLayout()
         self.setCentralWidget(self.baseconflayout)
+
+class CentralAppLayout(QtGui.QWidget):
+    def __init__(self):
+        super (CentralAppLayout, self).__init__()
+        self.initUI('bedpost.png')
+        
+
+    def initUI(self, image):
+
+        vbox = TransfersLayout()
+        
+        self.setLayout(vbox)
+        
+        QtGui.QApplication.setStyle(QtGui.QStyleFactory.create('Cleanlooks'))
+        
+        self.setGeometry(300, 300, 300, 200)
+        self.setWindowTitle('QtGui.QSplitter')
+        # self.show()
+
+class TransfersLayout(QtGui.QWidget):
+    
+    def __init__(self):
+        super(TransfersLayout, self).__init__()
+        
+        self.initUI()
+    
+    def initUI(self):
+    
+        hbox = QtGui.QHBoxLayout(self)
+    
+        self.tranTable = TransfersTable(25, 4)
+        bottom = self.tranTable
+
+        splitter = QtGui.QSplitter(QtCore.Qt.Horizontal)
+
+        splitter2 = QtGui.QSplitter(QtCore.Qt.Vertical)
+        splitter2.addWidget(splitter)
+        splitter2.addWidget(bottom)
+
+        hbox.addWidget(splitter2)
+
+        self.setLayout(hbox)
+
+        self.setGeometry(300, 300, 300, 200)
+        self.setWindowTitle('QtGui.QSplitter')
+        # self.show()
+
+class TransfersTable(QTableWidget):
+    def __init__(self, *args):
+        QTableWidget.__init__(self, *args)
+        self.setAlternatingRowColors(True)
+        self.setShowGrid(False)
+        self.verticalHeader().setVisible(False)
+        self.horizontalHeader().setVisible(False)
+        self.setTransfers()
+
+    def setTransfers(self):
+        http_client = pyjsonrpc.HttpClient(
+            url = "http://localhost:8080/",
+            )
+        svr_response = http_client.call("returntransfers")
+        newstruct = {'transfers_list': svr_response}
+        n = 0
+        for entry in newstruct:
+            x = 0
+            for obj in newstruct[entry]:
+                sublist = svr_response[x]
+                v = 0
+                for g in sublist:
+                    item = sublist[v]
+                    newitem = QTableWidgetItem(item)
+                    self.setItem(x, v, newitem)
+                    v += 1
+                x += 1
+            n += 1
 
 
 class BaseConfigLayout(QtGui.QWidget):

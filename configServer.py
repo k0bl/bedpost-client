@@ -199,6 +199,20 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
         for result in results:
             print result
         return results
+    
+    @pyjsonrpc.rpcmethod
+    def returntransfers(self):
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        c.execute('SELECT * FROM transfers')
+        results = c.fetchall()
+        
+        print "printing transfers"
+        print '\nindividual records'
+        
+        for result in results:
+            print result
+        return results
 
 # Threading HTTP-Server
 http_server = pyjsonrpc.ThreadingHttpServer(
