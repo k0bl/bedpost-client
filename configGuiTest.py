@@ -160,8 +160,10 @@ class LocationsTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
         self.setAlternatingRowColors(True)
+        self.setShowGrid(False)
+        self.verticalHeader().setVisible(False)
+        self.horizontalHeader().setVisible(False)
         self.setLocations()
-
 
     def setLocations(self):
         http_client = pyjsonrpc.HttpClient(
@@ -323,6 +325,9 @@ class ComputersConfigLayout(QtGui.QWidget):
 class ComputersTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
+        self.setShowGrid(False)
+        self.verticalHeader().setVisible(False)
+        self.horizontalHeader().setVisible(False)
         self.setAlternatingRowColors(True)
         self.setComputers()
 
@@ -465,6 +470,9 @@ class RemoteServersConfigLayout(QtGui.QWidget):
 class RemoteServersTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
+        self.setShowGrid(False)
+        self.verticalHeader().setVisible(False)
+        self.horizontalHeader().setVisible(False)
         self.setAlternatingRowColors(True)
         self.setRemoteServers()
 
