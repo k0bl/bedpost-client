@@ -161,6 +161,7 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
         c = conn.cursor()
         c.execute('SELECT * FROM locations')
         results = c.fetchall()
+        print "printing locations"
         print '\nindividual records'
         for result in results:
             print result
@@ -177,7 +178,22 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
         c = conn.cursor()
         c.execute('SELECT * FROM remote_servers')
         results = c.fetchall()
+        print "printing remote servers"
+        print '\nindividual records'
         
+        for result in results:
+            print result
+        return results
+
+#write a return methos that sends the remote servers back to the client
+    @pyjsonrpc.rpcmethod
+    def returncpcs(self):
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        c.execute('SELECT * FROM collection_pcs')
+        results = c.fetchall()
+        
+        print "printing collection pcs"
         print '\nindividual records'
         
         for result in results:
