@@ -159,7 +159,7 @@ class LocationsConfigLayout(QtGui.QWidget):
 class LocationsTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
-        self.setAlternatingRowColors(enable)
+        self.setAlternatingRowColors(True)
         self.setLocations()
 
 
@@ -323,6 +323,7 @@ class ComputersConfigLayout(QtGui.QWidget):
 class ComputersTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
+        self.setAlternatingRowColors(True)
         self.setComputers()
 
 
@@ -464,6 +465,7 @@ class RemoteServersConfigLayout(QtGui.QWidget):
 class RemoteServersTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
+        self.setAlternatingRowColors(True)
         self.setRemoteServers()
 
 
