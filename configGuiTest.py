@@ -35,7 +35,6 @@ class Main(QtGui.QMainWindow):
 
         self.logo = imageLayout()
         self.setMenuWidget(menubar)
-
         self.setGeometry(300, 300, 300, 200)
         self.setWindowTitle('Bedpost Client beta 0.0.2')
         self.show()
@@ -49,6 +48,7 @@ class BaseConfigLayout(QtGui.QWidget):
     def __init__(self):
         super (BaseConfigLayout, self).__init__()
         self.initUI()
+
 
     def initUI(self):
         
@@ -70,6 +70,7 @@ class BaseConfigLayout(QtGui.QWidget):
         self.tabs.addTab(self.tab4, "Schedule")
         self.tabs.setGeometry(500, 500, 500, 300)
         self.tabs.setWindowTitle('Bedpost Configuration')
+
         self.tabs.show()
     
 
@@ -158,6 +159,7 @@ class LocationsConfigLayout(QtGui.QWidget):
 class LocationsTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
+        self.setAlternatingRowColors(enable)
         self.setLocations()
 
 
@@ -321,7 +323,7 @@ class ComputersConfigLayout(QtGui.QWidget):
 class ComputersTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
-        # self.setComputers()
+        self.setComputers()
 
 
     def setComputers(self):
@@ -462,7 +464,7 @@ class RemoteServersConfigLayout(QtGui.QWidget):
 class RemoteServersTable(QTableWidget):
     def __init__(self, *args):
         QTableWidget.__init__(self, *args)
-        # self.setRemoteServers()
+        self.setRemoteServers()
 
 
     def setRemoteServers(self):
@@ -506,6 +508,7 @@ class imageLayout(QtGui.QWidget):
 def main():
     
     app = QtGui.QApplication(sys.argv)
+    app.setStyleSheet(" QTableWidget::item:focus { background-color:transparent; color:blue;  border: 0px }" )
     ex = Main()
     sys.exit(app.exec_())
 
