@@ -38,7 +38,7 @@ def resetDatabase():
         c.execute('''CREATE TABLE locations
         (location_id  INTEGER PRIMARY KEY ASC, location_name text, location_zip text, accronym text)''')                        
         c.execute('''CREATE TABLE transfers
-            (cpc text, time_done text, name text, started_at text, status text)''')
+            (transfer_id INTEGER PRIMARY KEY ASC, cpc text, time_done text, name text, started_at text, status text)''')
 
 
 class RequestHandler(pyjsonrpc.HttpRequestHandler):
@@ -213,7 +213,11 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
         for result in results:
             print result
         return results
+# print "resetting database"
+# resetDatabase()
+# print "done resetting database"
 
+    
 # Threading HTTP-Server
 http_server = pyjsonrpc.ThreadingHttpServer(
     server_address = ('localhost', 8080),
