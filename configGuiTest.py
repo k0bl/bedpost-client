@@ -44,39 +44,27 @@ class Main(QtGui.QMainWindow):
         self.baseconflayout = BaseConfigLayout()
         self.setCentralWidget(self.baseconflayout)
 
-class CentralAppLayout(QtGui.QWidget):
-    def __init__(self):
-        super (CentralAppLayout, self).__init__()
-        self.initUI('bedpost.png')
-        
-
-    def initUI(self, image):
-
-        vbox = TransfersLayout()
-        
-        self.setLayout(vbox)
-        
-        QtGui.QApplication.setStyle(QtGui.QStyleFactory.create('Cleanlooks'))
-        
-        self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('QtGui.QSplitter')
-        # self.show()
 
 class TransfersLayout(QtGui.QWidget):
     
     def __init__(self):
         super(TransfersLayout, self).__init__()
         
-        self.initUI()
+        self.initUI('bedpost.png')
     
-    def initUI(self):
+    def initUI(self, image):
     
         hbox = QtGui.QHBoxLayout(self)
-    
+        #set the image to lbl
+        pixmap = QtGui.QPixmap(image)
+        lbl = QtGui.QLabel(self)
+        lbl.setPixmap(pixmap)
+
         self.tranTable = TransfersTable(25, 4)
         bottom = self.tranTable
 
-        splitter = QtGui.QSplitter(QtCore.Qt.Horizontal)
+        splitter = QtGui.QSplitter(QtCore.Qt.Vertical)
+        splitter.addWidget(lbl)
 
         splitter2 = QtGui.QSplitter(QtCore.Qt.Vertical)
         splitter2.addWidget(splitter)
@@ -104,6 +92,10 @@ class TransfersTable(QTableWidget):
             url = "http://localhost:8080/",
             )
         svr_response = http_client.call("returntransfers")
+        
+        print svr_response
+
+        
         newstruct = {'transfers_list': svr_response}
         n = 0
         for entry in newstruct:
