@@ -25,13 +25,23 @@ class Main(QtGui.QMainWindow):
         configAction.setStatusTip('Client Options')
         configAction.triggered.connect(self.configClick)
         
+        
+        refreshAction = QtGui.QAction(QtGui.QIcon('refresh.png'), '&Refresh', self)
+        refreshAction.setShortcut('Ctrl+R')
+        refreshAction.triggered.connect(self.refreshClick)
+
         self.statusBar()
 
         menubar = self.menuBar()
+
+        self.toolbar = self.addToolBar('Refresh')
+        self.toolbar.addAction(refreshAction)
+
         fileMenu = menubar.addMenu('&File')
         fileMenu.addAction(exitAction)
         optionsMenu = menubar.addMenu('&Options')
         optionsMenu.addAction(configAction)
+        optionsMenu.addAction(refreshAction)
 
         self.logo = imageLayout()
         self.centapp = TransfersLayout()
@@ -44,7 +54,10 @@ class Main(QtGui.QMainWindow):
     def configClick(self):
         self.baseconflayout = BaseConfigLayout()
         self.setCentralWidget(self.baseconflayout)
-
+    
+    def refreshClick(self):
+        self.tranRefresh = TransfersLayout()
+        self.setCentralWidget(self.tranRefresh)
 
 class TransfersLayout(QtGui.QWidget):
     
