@@ -5,6 +5,7 @@ from PyQt4.QtCore import *
 import requests
 import json
 import pyjsonrpc
+import time
 
 #this is a test
 class Main(QtGui.QMainWindow):
@@ -30,7 +31,7 @@ class Main(QtGui.QMainWindow):
         refreshAction.setShortcut('Ctrl+R')
         refreshAction.triggered.connect(self.refreshClick)
 
-        self.statusBar()
+        
 
         menubar = self.menuBar()
 
@@ -54,10 +55,13 @@ class Main(QtGui.QMainWindow):
     def configClick(self):
         self.baseconflayout = BaseConfigLayout()
         self.setCentralWidget(self.baseconflayout)
-    
-    def refreshClick(self):
+        self.statusBar().showMessage('Entering configuration...')
+   
+    def refreshClick(self):     
         self.tranRefresh = TransfersLayout()
         self.setCentralWidget(self.tranRefresh)
+        self.statusBar().showMessage('Up To Date')
+
 
 class TransfersLayout(QtGui.QWidget):
     
