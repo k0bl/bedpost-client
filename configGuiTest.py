@@ -1,6 +1,7 @@
 import sys
 from PyQt4 import QtGui, QtCore
 from PyQt4.QtGui import *
+from PyQt4.QtCore import *
 import requests
 import json
 import pyjsonrpc
@@ -36,7 +37,7 @@ class Main(QtGui.QMainWindow):
         self.centapp = TransfersLayout()
         self.setMenuWidget(menubar)
         self.setCentralWidget(self.centapp)
-        self.setGeometry(300, 300, 300, 200)
+        self.setGeometry(300, 300, 800, 600)
         self.setWindowTitle('Bedpost Client beta 0.0.2')
         self.show()
     
@@ -60,7 +61,9 @@ class TransfersLayout(QtGui.QWidget):
         lbl = QtGui.QLabel(self)
         lbl.setPixmap(pixmap)
 
-        self.tranTable = TransfersTable(25, 4)
+        self.tranTable = TransfersTable(25, 6)
+        self.tranTable.setHorizontalHeaderLabels(('ID','Collection PC','Start Time','Study Name','Complete Time','Status'))
+        self.tranTable.resizeColumnsToContents()
         bottom = self.tranTable
 
         splitter = QtGui.QSplitter(QtCore.Qt.Vertical)
@@ -74,17 +77,22 @@ class TransfersLayout(QtGui.QWidget):
 
         self.setLayout(hbox)
 
-        self.setGeometry(300, 300, 300, 200)
+        self.setGeometry(300, 300, 800, 600)
         self.setWindowTitle('QtGui.QSplitter')
         # self.show()
 
 class TransfersTable(QTableWidget):
     def __init__(self, *args):
+        
         QTableWidget.__init__(self, *args)
+        table = QTableWidget()
+        
         self.setAlternatingRowColors(True)
         self.setShowGrid(False)
         self.verticalHeader().setVisible(False)
-        self.horizontalHeader().setVisible(False)
+        self.horizontalHeader().setVisible(True)
+        
+        
         self.setTransfers()
 
     def setTransfers(self):
