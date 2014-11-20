@@ -4,12 +4,13 @@ import os
 import sys
 import logging
 import atexit
+#import paramiko
 from datetime import datetime
 from shutil import copytree,rmtree
 import json
 import sqlite3
 import unicodedata
-#import paramiko
+
 version = 'v0.1'
 database = 'bedposttest.db'
 
@@ -67,14 +68,14 @@ def transferComplete(cpc, name, timedone):
 #test getting values from database. 
 #First need to get the beds and their datapath
 
-def returncpcs():
-    conn = sqlite3.connect(database)
-    c = conn.cursor()
-    c.execute('SELECT cpc_datadir FROM collection_pcs')
-    results = c.fetchall()
-    r2 = str(results)[1:-1]
-    r3 = r2.encode('ascii', 'ignore')
-    return r3
+# def returncpcs():
+#     conn = sqlite3.connect(database)
+#     c = conn.cursor()
+#     c.execute('SELECT cpc_datadir FROM collection_pcs')
+#     results = c.fetchall()
+#     r2 = str(results)[1:-1]
+#     r3 = r2.encode('ascii', 'ignore')
+#     return r3
 
 #Duration timer 
 starttime = datetime.now()
@@ -95,7 +96,7 @@ workstations = config.sections()
 if len(workstations) < 1:
     logging.critical('Configuration error: No workstations defined in configuration')
     sys.exit(1)
-
+print workstations
 
 retries = 5
 purge = False
@@ -121,15 +122,19 @@ logging.debug('Workstations: %s', workstations)
 
 # Stage 1
 # Copy studies from the workstations to data_path
+print "Starting Stage 1"
+print workstations
 
 logging.info('Starting stage 1')
 
 for current in workstations:
+    print current
     logging.info('Processing %s', current)
     logging.debug('Source Path: %s', current)
     #attempt to get a directory listing from source path
     try:
         studies = os.listdir(current)
+        print studies
     except:
         errno, error = sys.exc_info()[1]
         logging.warning('Unable to get list of studies from %s. Error %s: %s. Continuing...', current, errno, error)
@@ -279,4 +284,3 @@ logging.info('Stage 1 has finished')
 #                 logging.warning('Unable to purge %s. Continuing...', path)
 
 # t.close()
-print "Something"
