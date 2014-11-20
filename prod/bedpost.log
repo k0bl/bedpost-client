@@ -130,3 +130,813 @@
 11/19/2014 06:11:22 PM WARNING Unable to get list of studies from bed4. Error 3: The system cannot find the path specified. Continuing...
 11/19/2014 06:11:22 PM INFO Stage 1 has finished
 11/19/2014 06:11:22 PM INFO Bedpost took 0:00:00.016000 to complete.
+11/19/2014 06:22:25 PM INFO Bedpost v0.1 is starting...
+11/19/2014 06:22:25 PM INFO Starting stage 1
+11/19/2014 06:22:25 PM INFO Processing bed3
+11/19/2014 06:22:25 PM WARNING Unable to get list of studies from bed3. Error 3: The system cannot find the path specified. Continuing...
+11/19/2014 06:22:25 PM INFO Processing bed4
+11/19/2014 06:22:25 PM WARNING Unable to get list of studies from bed4. Error 3: The system cannot find the path specified. Continuing...
+11/19/2014 06:22:25 PM INFO Stage 1 has finished
+11/19/2014 06:22:25 PM INFO Bedpost took 0:00:00.016000 to complete.
+11/19/2014 06:22:27 PM INFO Bedpost v0.1 is starting...
+11/19/2014 06:22:27 PM INFO Starting stage 1
+11/19/2014 06:22:27 PM INFO Processing bed3
+11/19/2014 06:22:27 PM WARNING Unable to get list of studies from bed3. Error 3: The system cannot find the path specified. Continuing...
+11/19/2014 06:22:27 PM INFO Processing bed4
+11/19/2014 06:22:27 PM WARNING Unable to get list of studies from bed4. Error 3: The system cannot find the path specified. Continuing...
+11/19/2014 06:22:27 PM INFO Stage 1 has finished
+11/19/2014 06:22:27 PM INFO Bedpost took 0:00:00 to complete.
+11/19/2014 06:30:13 PM INFO Bedpost v0.1 is starting...
+11/19/2014 06:30:13 PM INFO Starting stage 1
+11/19/2014 06:30:13 PM INFO Processing bed3
+11/19/2014 06:30:13 PM WARNING Unable to get list of studies from bed3. Error 3: The system cannot find the path specified. Continuing...
+11/19/2014 06:30:13 PM INFO Processing bed4
+11/19/2014 06:30:13 PM WARNING Unable to get list of studies from bed4. Error 3: The system cannot find the path specified. Continuing...
+11/19/2014 06:30:13 PM INFO Stage 1 has finished
+11/19/2014 06:30:13 PM INFO Bedpost took 0:00:00.015000 to complete.
+11/19/2014 06:34:23 PM INFO Bedpost v0.1 is starting...
+11/19/2014 06:34:23 PM INFO Starting stage 1
+11/19/2014 06:34:23 PM INFO Processing bed3
+11/19/2014 06:34:23 PM WARNING Unable to get list of studies from bed3. Error 3: The system cannot find the path specified. Continuing...
+11/19/2014 06:34:23 PM INFO Processing bed4
+11/19/2014 06:34:23 PM WARNING Unable to get list of studies from bed4. Error 3: The system cannot find the path specified. Continuing...
+11/19/2014 06:34:23 PM INFO Stage 1 has finished
+11/19/2014 06:34:23 PM INFO Bedpost took 0:00:00.016000 to complete.
+11/19/2014 06:38:50 PM INFO Bedpost v0.1 is starting...
+11/19/2014 06:38:50 PM INFO Starting stage 1
+11/19/2014 06:38:50 PM INFO Processing bed3
+11/19/2014 06:38:50 PM INFO Copying bed3\bdfbffd
+11/19/2014 06:38:51 PM WARNING Attempt 1 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Attempt 2 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Attempt 3 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Attempt 4 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Attempt 5 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Copying bed3\bdfbffd has failed too many times. Continuing...
+11/19/2014 06:38:51 PM INFO Copying bed3\bfggbfn
+11/19/2014 06:38:51 PM WARNING Attempt 1 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Attempt 2 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Attempt 3 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Attempt 4 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Attempt 5 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/19/2014 06:38:51 PM WARNING Copying bed3\bfggbfn has failed too many times. Continuing...
+11/19/2014 06:38:51 PM INFO Copying bed3\Sample Pictures
+11/19/2014 06:38:51 PM WARNING Attempt 1 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Attempt 2 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Attempt 3 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Attempt 4 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Attempt 5 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Copying bed3\Sample Pictures has failed too many times. Continuing...
+11/19/2014 06:38:52 PM INFO Copying bed3\ssfbdd
+11/19/2014 06:38:52 PM WARNING Attempt 1 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Attempt 2 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Attempt 3 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Attempt 4 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Attempt 5 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/19/2014 06:38:52 PM WARNING Copying bed3\ssfbdd has failed too many times. Continuing...
+11/19/2014 06:38:52 PM INFO Copying bed3\ur298
+11/19/2014 06:38:52 PM WARNING Attempt 1 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 2 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 3 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 4 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 5 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Copying bed3\ur298 has failed too many times. Continuing...
+11/19/2014 06:38:53 PM INFO Copying bed3\vbdskvnksa
+11/19/2014 06:38:53 PM WARNING Attempt 1 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 2 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 3 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 4 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 5 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Copying bed3\vbdskvnksa has failed too many times. Continuing...
+11/19/2014 06:38:53 PM INFO Copying bed3\vndksw
+11/19/2014 06:38:53 PM WARNING Attempt 1 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/19/2014 06:38:53 PM WARNING Attempt 2 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Attempt 3 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Attempt 4 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Attempt 5 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Copying bed3\vndksw has failed too many times. Continuing...
+11/19/2014 06:38:54 PM INFO Copying bed3\wpeee9
+11/19/2014 06:38:54 PM WARNING Attempt 1 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Attempt 2 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Attempt 3 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Attempt 4 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Attempt 5 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/19/2014 06:38:54 PM WARNING Copying bed3\wpeee9 has failed too many times. Continuing...
+11/19/2014 06:38:54 PM INFO Processing bed4
+11/19/2014 06:38:55 PM INFO Copying bed4\4t0934t0
+11/19/2014 06:38:56 PM WARNING Attempt 1 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Attempt 2 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Attempt 3 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Attempt 4 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Attempt 5 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Copying bed4\4t0934t0 has failed too many times. Continuing...
+11/19/2014 06:38:56 PM INFO Copying bed4\fewfwfwef
+11/19/2014 06:38:56 PM WARNING Attempt 1 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Attempt 2 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Attempt 3 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Attempt 4 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Attempt 5 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/19/2014 06:38:56 PM WARNING Copying bed4\fewfwfwef has failed too many times. Continuing...
+11/19/2014 06:38:56 PM INFO Copying bed4\htrhtrhtrt
+11/19/2014 06:38:57 PM WARNING Attempt 1 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Attempt 2 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Attempt 3 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Attempt 4 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Attempt 5 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Copying bed4\htrhtrhtrt has failed too many times. Continuing...
+11/19/2014 06:38:57 PM INFO Copying bed4\jhntyjht
+11/19/2014 06:38:57 PM WARNING Attempt 1 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Attempt 2 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Attempt 3 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Attempt 4 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Attempt 5 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/19/2014 06:38:57 PM WARNING Copying bed4\jhntyjht has failed too many times. Continuing...
+11/19/2014 06:38:57 PM INFO Copying bed4\r32ut43ig
+11/19/2014 06:38:58 PM WARNING Attempt 1 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Attempt 2 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Attempt 3 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Attempt 4 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Attempt 5 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Copying bed4\r32ut43ig has failed too many times. Continuing...
+11/19/2014 06:38:58 PM INFO Copying bed4\Sample Pictures
+11/19/2014 06:38:58 PM WARNING Attempt 1 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Attempt 2 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Attempt 3 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Attempt 4 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Attempt 5 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/19/2014 06:38:58 PM WARNING Copying bed4\Sample Pictures has failed too many times. Continuing...
+11/19/2014 06:38:58 PM INFO Copying bed4\uifd09sf
+11/19/2014 06:38:59 PM WARNING Attempt 1 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Attempt 2 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Attempt 3 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Attempt 4 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Attempt 5 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Copying bed4\uifd09sf has failed too many times. Continuing...
+11/19/2014 06:38:59 PM INFO Copying bed4\vbnkejnvek
+11/19/2014 06:38:59 PM WARNING Attempt 1 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Attempt 2 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Attempt 3 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Attempt 4 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Attempt 5 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/19/2014 06:38:59 PM WARNING Copying bed4\vbnkejnvek has failed too many times. Continuing...
+11/19/2014 06:38:59 PM INFO Stage 1 has finished
+11/19/2014 06:38:59 PM INFO Bedpost took 0:00:09.815000 to complete.
+11/20/2014 07:49:51 AM INFO Bedpost v0.1 is starting...
+11/20/2014 07:49:51 AM INFO Starting stage 1
+11/20/2014 07:49:51 AM INFO Processing bed3
+11/20/2014 07:49:52 AM INFO Processing bed4
+11/20/2014 07:49:53 AM INFO Stage 1 has finished
+11/20/2014 07:49:53 AM INFO Bedpost took 0:00:01.985000 to complete.
+11/20/2014 07:54:57 AM INFO Bedpost v0.1 is starting...
+11/20/2014 07:54:57 AM INFO Starting stage 1
+11/20/2014 07:54:57 AM INFO Processing bed3
+11/20/2014 07:54:58 AM INFO Copying bed3\bdfbffd
+11/20/2014 07:54:58 AM WARNING Attempt 1 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/20/2014 07:54:58 AM WARNING Attempt 2 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/20/2014 07:54:59 AM WARNING Attempt 3 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/20/2014 07:54:59 AM WARNING Attempt 4 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/20/2014 07:54:59 AM WARNING Attempt 5 failed. Unable to copy bed3\bdfbffd. Error 3: The system cannot find the path specified
+11/20/2014 07:54:59 AM WARNING Copying bed3\bdfbffd has failed too many times. Continuing...
+11/20/2014 07:54:59 AM INFO Copying bed3\bfggbfn
+11/20/2014 07:54:59 AM WARNING Attempt 1 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/20/2014 07:54:59 AM WARNING Attempt 2 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/20/2014 07:54:59 AM WARNING Attempt 3 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/20/2014 07:54:59 AM WARNING Attempt 4 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/20/2014 07:54:59 AM WARNING Attempt 5 failed. Unable to copy bed3\bfggbfn. Error 3: The system cannot find the path specified
+11/20/2014 07:55:00 AM WARNING Copying bed3\bfggbfn has failed too many times. Continuing...
+11/20/2014 07:55:00 AM INFO Copying bed3\Sample Pictures
+11/20/2014 07:55:00 AM WARNING Attempt 1 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:00 AM WARNING Attempt 2 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:00 AM WARNING Attempt 3 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:00 AM WARNING Attempt 4 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:00 AM WARNING Attempt 5 failed. Unable to copy bed3\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:00 AM WARNING Copying bed3\Sample Pictures has failed too many times. Continuing...
+11/20/2014 07:55:00 AM INFO Copying bed3\ssfbdd
+11/20/2014 07:55:01 AM WARNING Attempt 1 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/20/2014 07:55:01 AM WARNING Attempt 2 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/20/2014 07:55:01 AM WARNING Attempt 3 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/20/2014 07:55:01 AM WARNING Attempt 4 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/20/2014 07:55:01 AM WARNING Attempt 5 failed. Unable to copy bed3\ssfbdd. Error 3: The system cannot find the path specified
+11/20/2014 07:55:01 AM WARNING Copying bed3\ssfbdd has failed too many times. Continuing...
+11/20/2014 07:55:01 AM INFO Copying bed3\ur298
+11/20/2014 07:55:01 AM WARNING Attempt 1 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/20/2014 07:55:02 AM WARNING Attempt 2 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/20/2014 07:55:02 AM WARNING Attempt 3 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/20/2014 07:55:02 AM WARNING Attempt 4 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/20/2014 07:55:02 AM WARNING Attempt 5 failed. Unable to copy bed3\ur298. Error 3: The system cannot find the path specified
+11/20/2014 07:55:02 AM WARNING Copying bed3\ur298 has failed too many times. Continuing...
+11/20/2014 07:55:02 AM INFO Copying bed3\vbdskvnksa
+11/20/2014 07:55:02 AM WARNING Attempt 1 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/20/2014 07:55:02 AM WARNING Attempt 2 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/20/2014 07:55:03 AM WARNING Attempt 3 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/20/2014 07:55:03 AM WARNING Attempt 4 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/20/2014 07:55:03 AM WARNING Attempt 5 failed. Unable to copy bed3\vbdskvnksa. Error 3: The system cannot find the path specified
+11/20/2014 07:55:03 AM WARNING Copying bed3\vbdskvnksa has failed too many times. Continuing...
+11/20/2014 07:55:03 AM INFO Copying bed3\vndksw
+11/20/2014 07:55:03 AM WARNING Attempt 1 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/20/2014 07:55:03 AM WARNING Attempt 2 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/20/2014 07:55:03 AM WARNING Attempt 3 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/20/2014 07:55:03 AM WARNING Attempt 4 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/20/2014 07:55:04 AM WARNING Attempt 5 failed. Unable to copy bed3\vndksw. Error 3: The system cannot find the path specified
+11/20/2014 07:55:04 AM WARNING Copying bed3\vndksw has failed too many times. Continuing...
+11/20/2014 07:55:04 AM INFO Copying bed3\wpeee9
+11/20/2014 07:55:04 AM WARNING Attempt 1 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/20/2014 07:55:04 AM WARNING Attempt 2 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/20/2014 07:55:04 AM WARNING Attempt 3 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/20/2014 07:55:04 AM WARNING Attempt 4 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/20/2014 07:55:04 AM WARNING Attempt 5 failed. Unable to copy bed3\wpeee9. Error 3: The system cannot find the path specified
+11/20/2014 07:55:04 AM WARNING Copying bed3\wpeee9 has failed too many times. Continuing...
+11/20/2014 07:55:04 AM INFO Processing bed4
+11/20/2014 07:55:06 AM INFO Copying bed4\4t0934t0
+11/20/2014 07:55:06 AM WARNING Attempt 1 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/20/2014 07:55:06 AM WARNING Attempt 2 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/20/2014 07:55:06 AM WARNING Attempt 3 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/20/2014 07:55:06 AM WARNING Attempt 4 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/20/2014 07:55:07 AM WARNING Attempt 5 failed. Unable to copy bed4\4t0934t0. Error 3: The system cannot find the path specified
+11/20/2014 07:55:07 AM WARNING Copying bed4\4t0934t0 has failed too many times. Continuing...
+11/20/2014 07:55:07 AM INFO Copying bed4\fewfwfwef
+11/20/2014 07:55:07 AM WARNING Attempt 1 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/20/2014 07:55:07 AM WARNING Attempt 2 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/20/2014 07:55:07 AM WARNING Attempt 3 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/20/2014 07:55:07 AM WARNING Attempt 4 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/20/2014 07:55:07 AM WARNING Attempt 5 failed. Unable to copy bed4\fewfwfwef. Error 3: The system cannot find the path specified
+11/20/2014 07:55:08 AM WARNING Copying bed4\fewfwfwef has failed too many times. Continuing...
+11/20/2014 07:55:08 AM INFO Copying bed4\htrhtrhtrt
+11/20/2014 07:55:08 AM WARNING Attempt 1 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/20/2014 07:55:08 AM WARNING Attempt 2 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/20/2014 07:55:08 AM WARNING Attempt 3 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/20/2014 07:55:08 AM WARNING Attempt 4 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/20/2014 07:55:08 AM WARNING Attempt 5 failed. Unable to copy bed4\htrhtrhtrt. Error 3: The system cannot find the path specified
+11/20/2014 07:55:09 AM WARNING Copying bed4\htrhtrhtrt has failed too many times. Continuing...
+11/20/2014 07:55:09 AM INFO Copying bed4\jhntyjht
+11/20/2014 07:55:09 AM WARNING Attempt 1 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/20/2014 07:55:09 AM WARNING Attempt 2 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/20/2014 07:55:09 AM WARNING Attempt 3 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/20/2014 07:55:09 AM WARNING Attempt 4 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/20/2014 07:55:09 AM WARNING Attempt 5 failed. Unable to copy bed4\jhntyjht. Error 3: The system cannot find the path specified
+11/20/2014 07:55:09 AM WARNING Copying bed4\jhntyjht has failed too many times. Continuing...
+11/20/2014 07:55:09 AM INFO Copying bed4\r32ut43ig
+11/20/2014 07:55:09 AM WARNING Attempt 1 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/20/2014 07:55:09 AM WARNING Attempt 2 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/20/2014 07:55:10 AM WARNING Attempt 3 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/20/2014 07:55:10 AM WARNING Attempt 4 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/20/2014 07:55:10 AM WARNING Attempt 5 failed. Unable to copy bed4\r32ut43ig. Error 3: The system cannot find the path specified
+11/20/2014 07:55:10 AM WARNING Copying bed4\r32ut43ig has failed too many times. Continuing...
+11/20/2014 07:55:10 AM INFO Copying bed4\Sample Pictures
+11/20/2014 07:55:10 AM WARNING Attempt 1 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:10 AM WARNING Attempt 2 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:10 AM WARNING Attempt 3 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:10 AM WARNING Attempt 4 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:11 AM WARNING Attempt 5 failed. Unable to copy bed4\Sample Pictures. Error 3: The system cannot find the path specified
+11/20/2014 07:55:11 AM WARNING Copying bed4\Sample Pictures has failed too many times. Continuing...
+11/20/2014 07:55:11 AM INFO Copying bed4\uifd09sf
+11/20/2014 07:55:11 AM WARNING Attempt 1 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/20/2014 07:55:11 AM WARNING Attempt 2 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/20/2014 07:55:11 AM WARNING Attempt 3 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/20/2014 07:55:11 AM WARNING Attempt 4 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/20/2014 07:55:11 AM WARNING Attempt 5 failed. Unable to copy bed4\uifd09sf. Error 3: The system cannot find the path specified
+11/20/2014 07:55:12 AM WARNING Copying bed4\uifd09sf has failed too many times. Continuing...
+11/20/2014 07:55:12 AM INFO Copying bed4\vbnkejnvek
+11/20/2014 07:55:12 AM WARNING Attempt 1 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/20/2014 07:55:12 AM WARNING Attempt 2 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/20/2014 07:55:12 AM WARNING Attempt 3 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/20/2014 07:55:12 AM WARNING Attempt 4 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/20/2014 07:55:12 AM WARNING Attempt 5 failed. Unable to copy bed4\vbnkejnvek. Error 3: The system cannot find the path specified
+11/20/2014 07:55:12 AM WARNING Copying bed4\vbnkejnvek has failed too many times. Continuing...
+11/20/2014 07:55:12 AM INFO Stage 1 has finished
+11/20/2014 07:55:12 AM INFO Bedpost took 0:00:14.786000 to complete.
+11/20/2014 08:04:16 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:04:16 AM INFO Starting stage 1
+11/20/2014 08:04:16 AM INFO Processing bed3
+11/20/2014 08:04:17 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 08:04:18 AM INFO Done
+11/20/2014 08:04:18 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 08:04:20 AM INFO Done
+11/20/2014 08:04:20 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 08:04:21 AM INFO Done
+11/20/2014 08:04:21 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 08:04:23 AM INFO Done
+11/20/2014 08:04:23 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 08:04:24 AM INFO Done
+11/20/2014 08:04:24 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 08:04:26 AM INFO Done
+11/20/2014 08:04:26 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 08:04:27 AM INFO Done
+11/20/2014 08:04:27 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 08:04:28 AM INFO Done
+11/20/2014 08:04:28 AM INFO Processing bed4
+11/20/2014 08:04:29 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:04:30 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 08:04:31 AM INFO Done
+11/20/2014 08:04:31 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 08:04:33 AM INFO Done
+11/20/2014 08:04:33 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 08:04:34 AM INFO Done
+11/20/2014 08:04:34 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 08:04:36 AM INFO Done
+11/20/2014 08:04:36 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 08:04:37 AM INFO Done
+11/20/2014 08:04:37 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:04:37 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 08:04:38 AM INFO Done
+11/20/2014 08:04:38 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 08:04:40 AM INFO Done
+11/20/2014 08:04:40 AM INFO Stage 1 has finished
+11/20/2014 08:04:40 AM INFO Bedpost took 0:00:23.829000 to complete.
+11/20/2014 08:06:32 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:06:32 AM INFO Starting stage 1
+11/20/2014 08:06:32 AM INFO Processing bed3
+11/20/2014 08:06:32 AM INFO bdfbffd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:32 AM INFO bfggbfn already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:32 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:32 AM INFO ssfbdd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:32 AM INFO ur298 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:32 AM INFO vbdskvnksa already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:32 AM INFO vndksw already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO wpeee9 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO bdfbffd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO bfggbfn already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO ssfbdd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO ur298 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO vbdskvnksa already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO vndksw already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO wpeee9 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO Processing bed4
+11/20/2014 08:06:33 AM INFO 4t0934t0 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO fewfwfwef already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO htrhtrhtrt already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO jhntyjht already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:33 AM INFO r32ut43ig already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO uifd09sf already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO vbnkejnvek already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO 4t0934t0 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO fewfwfwef already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO htrhtrhtrt already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO jhntyjht already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO r32ut43ig already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO uifd09sf already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO vbnkejnvek already exists in C:\srv\storage. Skipping...
+11/20/2014 08:06:34 AM INFO Stage 1 has finished
+11/20/2014 08:06:34 AM INFO Bedpost took 0:00:02.150000 to complete.
+11/20/2014 08:07:12 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:07:12 AM INFO Starting stage 1
+11/20/2014 08:07:12 AM INFO Processing bed3
+11/20/2014 08:07:13 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 08:07:14 AM INFO Done
+11/20/2014 08:07:14 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 08:07:17 AM INFO Done
+11/20/2014 08:07:17 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 08:07:19 AM INFO Done
+11/20/2014 08:07:19 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 08:07:21 AM INFO Done
+11/20/2014 08:07:21 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 08:07:22 AM INFO Done
+11/20/2014 08:07:22 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 08:07:24 AM INFO Done
+11/20/2014 08:07:24 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 08:07:25 AM INFO Done
+11/20/2014 08:07:25 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 08:07:26 AM INFO Done
+11/20/2014 08:07:26 AM INFO Processing bed4
+11/20/2014 08:07:27 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:07:27 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 08:07:29 AM INFO Done
+11/20/2014 08:07:29 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 08:07:30 AM INFO Done
+11/20/2014 08:07:30 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 08:07:31 AM INFO Done
+11/20/2014 08:07:31 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 08:07:32 AM INFO Done
+11/20/2014 08:07:32 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 08:07:33 AM INFO Done
+11/20/2014 08:07:33 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:07:33 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 08:07:35 AM INFO Done
+11/20/2014 08:07:35 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 08:07:36 AM INFO Done
+11/20/2014 08:07:36 AM INFO Stage 1 has finished
+11/20/2014 08:07:36 AM INFO Bedpost took 0:00:23.334000 to complete.
+11/20/2014 08:09:38 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:09:38 AM INFO Starting stage 1
+11/20/2014 08:09:38 AM INFO Processing bed3
+11/20/2014 08:09:39 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 08:09:41 AM INFO Done
+11/20/2014 08:09:41 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 08:09:43 AM INFO Done
+11/20/2014 08:09:43 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 08:09:44 AM INFO Done
+11/20/2014 08:09:44 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 08:09:45 AM INFO Done
+11/20/2014 08:09:45 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 08:09:46 AM INFO Done
+11/20/2014 08:09:46 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 08:09:47 AM INFO Done
+11/20/2014 08:09:47 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 08:09:49 AM INFO Done
+11/20/2014 08:09:49 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 08:09:50 AM INFO Done
+11/20/2014 08:09:50 AM INFO Processing bed4
+11/20/2014 08:09:51 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:09:52 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 08:09:53 AM INFO Done
+11/20/2014 08:09:53 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 08:09:54 AM INFO Done
+11/20/2014 08:09:54 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 08:09:55 AM INFO Done
+11/20/2014 08:09:55 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 08:09:57 AM INFO Done
+11/20/2014 08:09:57 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 08:09:58 AM INFO Done
+11/20/2014 08:09:58 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:09:58 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 08:09:59 AM INFO Done
+11/20/2014 08:09:59 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 08:10:00 AM INFO Done
+11/20/2014 08:10:00 AM INFO Stage 1 has finished
+11/20/2014 08:10:00 AM INFO Bedpost took 0:00:22.567000 to complete.
+11/20/2014 08:12:28 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:12:28 AM INFO Starting stage 1
+11/20/2014 08:12:28 AM INFO Processing bed3
+11/20/2014 08:12:29 AM INFO bdfbffd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO bfggbfn already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO ssfbdd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO ur298 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO vbdskvnksa already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO vndksw already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO wpeee9 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO bdfbffd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO bfggbfn already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO ssfbdd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO ur298 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO vbdskvnksa already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO vndksw already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO wpeee9 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:29 AM INFO Processing bed4
+11/20/2014 08:12:29 AM INFO 4t0934t0 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO fewfwfwef already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO htrhtrhtrt already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO jhntyjht already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO r32ut43ig already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO uifd09sf already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO vbnkejnvek already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO 4t0934t0 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO fewfwfwef already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO htrhtrhtrt already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO jhntyjht already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO r32ut43ig already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO uifd09sf already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO vbnkejnvek already exists in C:\srv\storage. Skipping...
+11/20/2014 08:12:30 AM INFO Stage 1 has finished
+11/20/2014 08:12:30 AM INFO Bedpost took 0:00:01.653000 to complete.
+11/20/2014 08:13:41 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:13:42 AM INFO Starting stage 1
+11/20/2014 08:13:42 AM INFO Processing bed3
+11/20/2014 08:13:43 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 08:13:44 AM INFO Done
+11/20/2014 08:13:44 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 08:13:45 AM INFO Done
+11/20/2014 08:13:45 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 08:13:46 AM INFO Done
+11/20/2014 08:13:46 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 08:13:48 AM INFO Done
+11/20/2014 08:13:48 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 08:13:49 AM INFO Done
+11/20/2014 08:13:49 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 08:13:50 AM INFO Done
+11/20/2014 08:13:50 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 08:13:52 AM INFO Done
+11/20/2014 08:13:52 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 08:13:53 AM INFO Done
+11/20/2014 08:13:53 AM INFO Processing bed4
+11/20/2014 08:13:54 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:13:54 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 08:13:55 AM INFO Done
+11/20/2014 08:13:55 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 08:13:57 AM INFO Done
+11/20/2014 08:13:57 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 08:13:58 AM INFO Done
+11/20/2014 08:13:58 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 08:13:59 AM INFO Done
+11/20/2014 08:13:59 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 08:14:01 AM INFO Done
+11/20/2014 08:14:01 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:14:01 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 08:14:02 AM INFO Done
+11/20/2014 08:14:02 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 08:14:04 AM INFO Done
+11/20/2014 08:14:04 AM INFO Stage 1 has finished
+11/20/2014 08:14:04 AM INFO Bedpost took 0:00:22.031000 to complete.
+11/20/2014 08:16:22 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:16:22 AM INFO Starting stage 1
+11/20/2014 08:16:22 AM INFO Processing bed3
+11/20/2014 08:16:23 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 08:16:24 AM INFO Done
+11/20/2014 08:16:24 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 08:16:25 AM INFO Done
+11/20/2014 08:16:25 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 08:16:26 AM INFO Done
+11/20/2014 08:16:26 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 08:16:28 AM INFO Done
+11/20/2014 08:16:28 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 08:16:29 AM INFO Done
+11/20/2014 08:16:29 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 08:16:30 AM INFO Done
+11/20/2014 08:16:30 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 08:16:32 AM INFO Done
+11/20/2014 08:16:32 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 08:16:33 AM INFO Done
+11/20/2014 08:16:33 AM INFO Processing bed4
+11/20/2014 08:16:34 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:16:34 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 08:16:35 AM INFO Done
+11/20/2014 08:16:35 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 08:16:37 AM INFO Done
+11/20/2014 08:16:37 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 08:16:39 AM INFO Done
+11/20/2014 08:16:39 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 08:16:40 AM INFO Done
+11/20/2014 08:16:40 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 08:16:41 AM INFO Done
+11/20/2014 08:16:41 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:16:41 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 08:16:43 AM INFO Done
+11/20/2014 08:16:43 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 08:16:44 AM INFO Done
+11/20/2014 08:16:44 AM INFO Stage 1 has finished
+11/20/2014 08:16:44 AM INFO Bedpost took 0:00:22.374000 to complete.
+11/20/2014 08:21:28 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:21:28 AM INFO Starting stage 1
+11/20/2014 08:21:28 AM INFO Processing bed3
+11/20/2014 08:21:29 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 08:21:30 AM INFO Done
+11/20/2014 08:21:30 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 08:21:31 AM INFO Done
+11/20/2014 08:21:31 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 08:21:33 AM INFO Done
+11/20/2014 08:21:33 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 08:21:34 AM INFO Done
+11/20/2014 08:21:34 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 08:21:35 AM INFO Done
+11/20/2014 08:21:35 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 08:21:37 AM INFO Done
+11/20/2014 08:21:37 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 08:21:38 AM INFO Done
+11/20/2014 08:21:38 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 08:21:39 AM INFO Done
+11/20/2014 08:21:39 AM INFO Processing bed4
+11/20/2014 08:21:40 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:21:40 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 08:21:41 AM INFO Done
+11/20/2014 08:21:41 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 08:21:43 AM INFO Done
+11/20/2014 08:21:43 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 08:21:44 AM INFO Done
+11/20/2014 08:21:44 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 08:21:46 AM INFO Done
+11/20/2014 08:21:46 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 08:21:47 AM INFO Done
+11/20/2014 08:21:47 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:21:47 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 08:21:48 AM INFO Done
+11/20/2014 08:21:48 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 08:21:50 AM INFO Done
+11/20/2014 08:21:50 AM INFO Stage 1 has finished
+11/20/2014 08:21:50 AM INFO Bedpost took 0:00:22.022000 to complete.
+11/20/2014 08:24:33 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:24:33 AM INFO Starting stage 1
+11/20/2014 08:24:33 AM INFO Processing bed3
+11/20/2014 08:24:33 AM INFO bdfbffd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO bfggbfn already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO ssfbdd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO ur298 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO vbdskvnksa already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO vndksw already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO wpeee9 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO bdfbffd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO bfggbfn already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO ssfbdd already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO ur298 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO vbdskvnksa already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO vndksw already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO wpeee9 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:33 AM INFO Processing bed4
+11/20/2014 08:24:34 AM INFO 4t0934t0 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO fewfwfwef already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO htrhtrhtrt already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO jhntyjht already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO r32ut43ig already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO uifd09sf already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO vbnkejnvek already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO 4t0934t0 already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO fewfwfwef already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO htrhtrhtrt already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO jhntyjht already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO r32ut43ig already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO uifd09sf already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO vbnkejnvek already exists in C:\srv\storage. Skipping...
+11/20/2014 08:24:34 AM INFO Stage 1 has finished
+11/20/2014 08:24:34 AM INFO Bedpost took 0:00:01.664000 to complete.
+11/20/2014 08:25:40 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:25:40 AM INFO Starting stage 1
+11/20/2014 08:25:40 AM INFO Processing bed3
+11/20/2014 08:25:41 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 08:25:43 AM INFO Done
+11/20/2014 08:25:43 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 08:25:45 AM INFO Done
+11/20/2014 08:25:45 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 08:25:47 AM INFO Done
+11/20/2014 08:25:47 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 08:25:48 AM INFO Done
+11/20/2014 08:25:48 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 08:25:49 AM INFO Done
+11/20/2014 08:25:49 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 08:25:51 AM INFO Done
+11/20/2014 08:25:51 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 08:25:52 AM INFO Done
+11/20/2014 08:25:52 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 08:25:54 AM INFO Done
+11/20/2014 08:25:54 AM INFO Processing bed4
+11/20/2014 08:25:55 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:25:55 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 08:25:57 AM INFO Done
+11/20/2014 08:25:57 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 08:25:58 AM INFO Done
+11/20/2014 08:25:58 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 08:26:00 AM INFO Done
+11/20/2014 08:26:00 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 08:26:01 AM INFO Done
+11/20/2014 08:26:01 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 08:26:03 AM INFO Done
+11/20/2014 08:26:03 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:26:03 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 08:26:04 AM INFO Done
+11/20/2014 08:26:04 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 08:26:06 AM INFO Done
+11/20/2014 08:26:06 AM INFO Stage 1 has finished
+11/20/2014 08:26:06 AM INFO Bedpost took 0:00:25.605000 to complete.
+11/20/2014 08:30:27 AM INFO Bedpost v0.1 is starting...
+11/20/2014 08:30:27 AM INFO Starting stage 1
+11/20/2014 08:30:27 AM INFO Processing bed3
+11/20/2014 08:30:28 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 08:30:29 AM INFO Done
+11/20/2014 08:30:29 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 08:30:31 AM INFO Done
+11/20/2014 08:30:31 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 08:30:32 AM INFO Done
+11/20/2014 08:30:32 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 08:30:33 AM INFO Done
+11/20/2014 08:30:33 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 08:30:35 AM INFO Done
+11/20/2014 08:30:35 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 08:30:36 AM INFO Done
+11/20/2014 08:30:36 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 08:30:38 AM INFO Done
+11/20/2014 08:30:38 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 08:30:39 AM INFO Done
+11/20/2014 08:30:39 AM INFO Processing bed4
+11/20/2014 08:30:40 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:30:40 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 08:30:41 AM INFO Done
+11/20/2014 08:30:41 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 08:30:43 AM INFO Done
+11/20/2014 08:30:43 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 08:30:44 AM INFO Done
+11/20/2014 08:30:44 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 08:30:46 AM INFO Done
+11/20/2014 08:30:46 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 08:30:47 AM INFO Done
+11/20/2014 08:30:47 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 08:30:47 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 08:30:49 AM INFO Done
+11/20/2014 08:30:49 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 08:30:51 AM INFO Done
+11/20/2014 08:30:51 AM INFO Stage 1 has finished
+11/20/2014 08:30:51 AM INFO Bedpost took 0:00:23.576000 to complete.
+11/20/2014 09:29:19 AM INFO Bedpost v0.1 is starting...
+11/20/2014 09:29:19 AM INFO Starting stage 1
+11/20/2014 09:29:19 AM INFO Processing bed3
+11/20/2014 09:29:24 AM INFO Bedpost took 0:00:05.060000 to complete.
+11/20/2014 09:29:43 AM INFO Bedpost v0.1 is starting...
+11/20/2014 09:29:43 AM INFO Starting stage 1
+11/20/2014 09:29:43 AM INFO Processing bed3
+11/20/2014 09:29:44 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 09:29:46 AM INFO Done
+11/20/2014 09:29:46 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 09:29:47 AM INFO Done
+11/20/2014 09:29:47 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 09:29:48 AM INFO Done
+11/20/2014 09:29:48 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 09:29:50 AM INFO Done
+11/20/2014 09:29:50 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 09:29:51 AM INFO Done
+11/20/2014 09:29:51 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 09:29:53 AM INFO Done
+11/20/2014 09:29:53 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 09:29:55 AM INFO Done
+11/20/2014 09:29:55 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 09:29:56 AM INFO Done
+11/20/2014 09:29:56 AM INFO Processing bed4
+11/20/2014 09:29:57 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 09:29:57 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 09:29:59 AM INFO Done
+11/20/2014 09:29:59 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 09:30:00 AM INFO Done
+11/20/2014 09:30:00 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 09:30:02 AM INFO Done
+11/20/2014 09:30:02 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 09:30:03 AM INFO Done
+11/20/2014 09:30:03 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 09:30:05 AM INFO Done
+11/20/2014 09:30:05 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 09:30:05 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 09:30:07 AM INFO Done
+11/20/2014 09:30:07 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 09:30:08 AM INFO Done
+11/20/2014 09:30:08 AM INFO Stage 1 has finished
+11/20/2014 09:30:08 AM INFO Bedpost took 0:00:24.676000 to complete.
+11/20/2014 10:54:33 AM INFO Bedpost v0.1 is starting...
+11/20/2014 10:54:33 AM INFO Starting stage 1
+11/20/2014 10:54:33 AM INFO Processing bed3
+11/20/2014 10:54:34 AM INFO Copying \\10.0.3.103\TestData\bdfbffd
+11/20/2014 10:54:35 AM INFO Done
+11/20/2014 10:54:35 AM INFO Copying \\10.0.3.103\TestData\bfggbfn
+11/20/2014 10:54:37 AM INFO Done
+11/20/2014 10:54:37 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 10:54:39 AM INFO Done
+11/20/2014 10:54:39 AM INFO Copying \\10.0.3.103\TestData\ssfbdd
+11/20/2014 10:54:40 AM INFO Done
+11/20/2014 10:54:40 AM INFO Copying \\10.0.3.103\TestData\ur298
+11/20/2014 10:54:41 AM INFO Done
+11/20/2014 10:54:41 AM INFO Copying \\10.0.3.103\TestData\vbdskvnksa
+11/20/2014 10:54:43 AM INFO Done
+11/20/2014 10:54:43 AM INFO Copying \\10.0.3.103\TestData\vndksw
+11/20/2014 10:54:45 AM INFO Done
+11/20/2014 10:54:45 AM INFO Copying \\10.0.3.103\TestData\wpeee9
+11/20/2014 10:54:46 AM INFO Done
+11/20/2014 10:54:46 AM INFO Processing bed4
+11/20/2014 10:54:47 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 10:54:48 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 10:54:49 AM INFO Done
+11/20/2014 10:54:49 AM INFO Copying \\10.0.3.120\TestData\fewfwfwef
+11/20/2014 10:54:51 AM INFO Done
+11/20/2014 10:54:51 AM INFO Copying \\10.0.3.120\TestData\htrhtrhtrt
+11/20/2014 10:54:52 AM INFO Done
+11/20/2014 10:54:52 AM INFO Copying \\10.0.3.120\TestData\jhntyjht
+11/20/2014 10:54:54 AM INFO Done
+11/20/2014 10:54:54 AM INFO Copying \\10.0.3.120\TestData\r32ut43ig
+11/20/2014 10:54:55 AM INFO Done
+11/20/2014 10:54:55 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 10:54:55 AM INFO Copying \\10.0.3.120\TestData\uifd09sf
+11/20/2014 10:54:56 AM INFO Done
+11/20/2014 10:54:56 AM INFO Copying \\10.0.3.120\TestData\vbnkejnvek
+11/20/2014 10:54:58 AM INFO Done
+11/20/2014 10:54:58 AM INFO Stage 1 has finished
+11/20/2014 10:54:58 AM INFO Bedpost took 0:00:24.586000 to complete.
+11/20/2014 10:56:15 AM INFO Bedpost v0.1 is starting...
+11/20/2014 10:56:15 AM INFO Starting stage 1
+11/20/2014 10:56:15 AM INFO Processing bed3
+11/20/2014 10:56:15 AM INFO bdfbffd already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO bfggbfn already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO ssfbdd already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO ur298 already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO vbdskvnksa already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO vndksw already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO wpeee9 already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO bdfbffd already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO bfggbfn already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:16 AM INFO Copying \\10.0.3.103\TestData\Sample Pictures
+11/20/2014 10:56:17 AM INFO Done
+11/20/2014 10:56:17 AM INFO ssfbdd already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:17 AM INFO ur298 already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:17 AM INFO vbdskvnksa already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:17 AM INFO vndksw already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:17 AM INFO wpeee9 already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:17 AM INFO Processing bed4
+11/20/2014 10:56:18 AM INFO fewfwfwef already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:18 AM INFO htrhtrhtrt already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:18 AM INFO jhntyjht already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:18 AM INFO r32ut43ig already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:18 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:18 AM INFO uifd09sf already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:19 AM INFO vbnkejnvek already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:19 AM INFO Copying \\10.0.3.120\TestData\4t0934t0
+11/20/2014 10:56:20 AM INFO Done
+11/20/2014 10:56:20 AM INFO fewfwfwef already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:20 AM INFO htrhtrhtrt already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:20 AM INFO jhntyjht already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:20 AM INFO r32ut43ig already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:20 AM INFO Sample Pictures already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:20 AM INFO uifd09sf already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:20 AM INFO vbnkejnvek already exists in C:\srv\storage. Skipping...
+11/20/2014 10:56:20 AM INFO Stage 1 has finished
+11/20/2014 10:56:20 AM INFO Bedpost took 0:00:04.645000 to complete.

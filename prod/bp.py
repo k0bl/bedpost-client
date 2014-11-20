@@ -32,7 +32,7 @@ def startingTransfer(cpc, name):
     print "Study Name", dbname
     print "Current Status", dbstatus
     c.execute ("INSERT INTO transfers VALUES (null, ?, ?, ?, ?, ?);", (dbcpc, dbtimedone, dbname, dbstarted_at, dbstatus))
-    print "Insertion is done...giggity"
+    print "Inserted", name
     conn.commit()
     conn.close()
     
@@ -46,7 +46,7 @@ def transferring(cpc, name, started_at):
     dbname = name
     dbstatus = str('Transferring')
     c.execute("UPDATE transfers SET status=?, started_at=?  WHERE name=?", (dbstatus, dbstarted_at, dbname))
-    print "update is done...giggity"
+    print "updated", name
     conn.commit()
     conn.close()
 
@@ -60,10 +60,21 @@ def transferComplete(cpc, name, timedone):
     dbname = name
     dbstatus = str('Transfer Complete')
     c.execute("UPDATE transfers SET status=?, time_done=?  WHERE name=?", (dbstatus, dbtimedone, dbname))
-    print "update is done...giggity"
+    print "updated", name
     conn.commit()
     conn.close()
 
+def transferFailed(cpc, name):
+    conn = sqlite3.connect(database)
+    c = conn.cursor()
+    #persist new values to sqlite3 database
+    dbcpc = str(cpc)
+    dbname = name
+    dbstatus = str('Transfer Failed - See Log')
+    c.execute("UPDATE transfers SET status=? WHERE name=?", (dbstatus, dbname))
+    print "updated", name
+    conn.commit()
+    conn.close()
 
 #test getting values from database. 
 #First need to get the beds and their datapath
@@ -130,10 +141,11 @@ logging.info('Starting stage 1')
 for current in workstations:
     print current
     logging.info('Processing %s', current)
-    logging.debug('Source Path: %s', current)
+    source_path = config.get(current, 'path')
+    logging.debug('Source Path: %s', source_path)
     #attempt to get a directory listing from source path
     try:
-        studies = os.listdir(current)
+        studies = os.listdir(source_path)
         print studies
     except:
         errno, error = sys.exc_info()[1]
@@ -147,13 +159,14 @@ for current in workstations:
             logging.debug('Skipping sandman.sdb')
             continue #with next entry
 
-        srcname = os.path.join(current, entry)
+        dispname = entry
+        srcname = os.path.join(source_path, entry)
         dstname = os.path.join(data_path, entry)
         logging.debug('Source Name: %s', srcname)
         logging.debug('Dest Name: %s', dstname)
         
         #StartTransfer
-        startingTransfer(current, srcname)
+        startingTransfer(current, dispname)
         
         if os.path.isdir(dstname):
             logging.info('%s already exists in %s. Skipping...', entry, data_path)
@@ -166,11 +179,12 @@ for current in workstations:
             logging.debug('Skipping sandman.sdb')
             continue #with next entry
 
-        srcname = os.path.join(current, entry)
+        dispname = entry
+        srcname = os.path.join(source_path, entry)
         dstname = os.path.join(data_path, entry)
         logging.debug('Source Name: %s', srcname)
         logging.debug('Dest Name: %s', dstname)
-        
+        # startingTransfer(current, srcname)
         
         
         if os.path.isdir(dstname):
@@ -179,17 +193,20 @@ for current in workstations:
         
         logging.info('Copying %s', srcname)
         tstart1 = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        transferring(current, srcname, tstart1)
+        transferring(current, dispname, tstart1)
         #attempt to copy the study with retries.
         success = False
         for attempt in range(1, retries+1):
             try:
                 copytree(srcname, dstname)
+                
                 print srcname, dstname
-
+                tcomplete1 = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                transferComplete(current, dispname, tcomplete1)
             except:
                 errno, error = sys.exc_info()[1]
                 logging.warning('Attempt %s failed. Unable to copy %s. Error %s: %s', attempt, srcname, errno, error)
+                transferFailed(current, dispname)
             else:
                 if purge:
                     try:
@@ -201,86 +218,9 @@ for current in workstations:
 
             if success == True:
                 break #out of retry loop early
-            tcomplete1 = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            transferComplete(current, srcname, tcomplete1)
+            
         else:
             logging.warning('Copying %s has failed too many times. Continuing...', srcname)
             continue #with next entry
 
-logging.info('Stage 1 has finished')
-## Stage 2
-## Copy all to sftp server
-
-# logging.info('Starting stage 2')
-
-# studies = os.listdir(data_path)
-# logging.debug('Studies: %s', studies)
-
-# try:
-#     t = paramiko.Transport((sftp_server, sftp_port))
-#     t.connect(username=sftp_user, password=sftp_pass)
-#     sftp = paramiko.SFTPClient.from_transport(t)
-# except Exception, e:
-#     logging.critical('Connection Error: %s', e)
-#     sys.exit(1)
-# else:
-#     logging.info('Connected to %s', sftp_server);
-
-# try:
-#     sftp.mkdir(sftp_path)
-#     logging.info('Created %s on sftp server', sftp_path)
-# except IOError:
-#     logging.info('Assuming %s exists on sftp server', sftp_path)
-
-# logging.info('Getting list of uploaded studies')
-# try:
-#     uploaded_studies = sftp.listdir(sftp_path)
-# except Exception, e:
-#     logging.critical('Error occurred attempting to get list of studies. %s', e)
-#     sys.exit(1)
-# else:
-#     logging.debug('Uploaded Studies: %s', uploaded_studies)
-
-
-# for entry in studies:
-#     if entry in uploaded_studies:
-#         logging.warning('%s already exists on sftp server. Continuing.', entry)
-#         continue
-#     logging.info('Processing %s', entry);
-#     study_src = os.path.join(data_path, entry)
-#     study_dst = "/".join((sftp_path, entry))
-#     logging.debug('Study Source: %s', study_src)
-#     logging.debug('Study Destination: %s', study_dst)
-#     try:
-#         sftp.mkdir(study_dst)
-#         for root, dirs, files in os.walk(study_src):
-#             relpath = os.path.relpath(root, study_src)
-#             logging.debug("Root: %s", root)
-#             logging.debug("Relpath: %s", relpath)
-#             logging.debug("Dirs: %s", dirs)
-#             logging.debug("File Count: %s", len(files))
-#             logging.info('In %s', root)
-#             for mydir in dirs:
-#                 path = "/".join((study_dst, relpath, mydir))
-#                 logging.info('Creating %s', path)
-#                 sftp.mkdir(path)
-#             for myfile in files:
-#                 src = os.path.join(root, myfile)
-#                 dst = "/".join((study_dst, relpath, myfile))
-#                 logging.debug('src: %s', src)
-#                 logging.debug('dst: %s', dst)
-#                 logging.info('Copying %s', src)
-#                 sftp.put(src, dst)
-
-#     except Exception, e:
-#         logging.critical('An error occurred: %s', e)
-#         sys.exit(1)
-#     else:
-#         if purge:
-#             path = os.path.join(data_path, entry)
-#             try:
-#                 rmtree(path)
-#             except:
-#                 logging.warning('Unable to purge %s. Continuing...', path)
-
-# t.close()
+logging.info('Bedpost 0.2 has finished')
