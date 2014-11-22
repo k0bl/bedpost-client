@@ -6,6 +6,19 @@ import requests
 import json
 import pyjsonrpc
 import time
+import sqlite3
+
+database = 'configs.db'
+#database function for resetting the local database
+
+def resetDatabase():
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        #Drop the tables if they already exists
+        c.execute("DROP TABLE IF EXISTS servers")
+        #Create new tables for each entity
+        c.execute('''CREATE TABLE servers
+        (svr_id  INTEGER PRIMARY KEY ASC, svr_ip text)''')
 
 #this is a test
 class Main(QtGui.QMainWindow):
@@ -51,20 +64,18 @@ class Main(QtGui.QMainWindow):
         self.setGeometry(300, 300, 800, 600)
         self.setWindowTitle('Bedpost Client beta 0.0.2')
         self.show()
-    
+        
     def configClick(self):
         self.baseconflayout = BaseConfigLayout()
         self.setCentralWidget(self.baseconflayout)
         self.statusBar().showMessage('Entering configuration...')
+    
     def refreshClick(self):
-        
-        
         self.tranRefresh = TransfersLayout()
         self.statusBar().showMessage('Refreshing...')
         self.setCentralWidget(self.tranRefresh)
         time.sleep(3)
         self.statusBar().showMessage('Up To Date')
-
 
 class TransfersLayout(QtGui.QWidget):
     
@@ -149,17 +160,21 @@ class BaseConfigLayout(QtGui.QWidget):
     def initUI(self):
         
         self.tabs = QtGui.QTabWidget()
+        self.localconfig = LocalClientConfigLayout()
         self.configlayout = LocationsConfigLayout()
         self.cpclayout = ComputersConfigLayout()
         self.rmlayout = RemoteServersConfigLayout()
-        self.tab1 = self.configlayout
-        self.tab2 = self.cpclayout
-        self.tab3 = self.rmlayout
-        self.tab4 = QtGui.QWidget()
+        
+        self.tab1 = self.localconfig
+        self.tab2 = self.configlayout
+        self.tab3 = self.cpclayout
+        self.tab4 = self.rmlayout
+        self.tab5 = QtGui.QWidget()
 
         self.tabs.resize(250, 150)
         self.tabs.move(300, 300)
                 
+        self.tabs.addTab(self.tab1,"Bedpost Server")
         self.tabs.addTab(self.tab1,"Locations")
         self.tabs.addTab(self.tab2,"Computers")
         self.tabs.addTab(self.tab3, "Backup and Retention")
@@ -168,8 +183,55 @@ class BaseConfigLayout(QtGui.QWidget):
         self.tabs.setWindowTitle('Bedpost Configuration')
 
         self.tabs.show()
-    
 
+
+#Write a class that handles a basic configuration window for remote server configuration.    
+
+class LocalClientConfigLayout(QtGui.QWidget):
+    def __init__(self):
+        super (LocalClientConfigLayout, self).__init__()
+        self.initUI()
+    
+    def initUI(self):
+
+        self.newbtn = QtGui.QPushButton('Update Bedpost Server', self)
+        self.newbtn.move(20, 40)
+        self.newbtn.clicked.connect(self.newServer)
+
+        self.lbl = QtGui.QLabel(self)
+        self.svr = self.getServer
+        self.lbl.setText(self.svr)
+        self.lbl.move(60, 60)
+
+    def newServer(self):
+        self.svrIP, ok = QtGui.QInputDialog.getText(self, 'Input Dialog', 
+            'Enter Bedpost Server IP:')
+        
+        if ok:
+            self.lbl.setText(str(self.svrIP))
+            print self.svrIP
+            self.dbstr = str(self.svrIP)
+            self.applyChanges(self.dbstr)
+
+    def applyChanges(self, sip):
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        serverip = str(sip)
+        print serverip
+        c.execute("INSERT INTO servers VALUES (null, ?);",(serverip,))
+        conn.commit()
+        conn.close()
+
+    def getServer(self):
+        conn = sqlite3.connect(database)
+        c = conn.cusor()
+        c.execute('SELECT svrIP FROM servers')
+        last_id = c.lastrowid
+        c.execute("SELECT * FROM remote_servers WHERE rm_id = ?", (last_id,))
+        row = c.fetchone()
+        conn.close()
+        return row
+        
 
 class LocationsConfigLayout(QtGui.QWidget):
     
@@ -609,7 +671,6 @@ class imageLayout(QtGui.QWidget):
         hbox.addWidget(lbl)
 
         self.setLayout(hbox)
-
 
 def main():
     
