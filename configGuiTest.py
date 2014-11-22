@@ -12,8 +12,9 @@ class Main(QtGui.QMainWindow):
     def __init__(self):
         
         super(Main, self).__init__()
+        
         self.initUI()
-
+        self.refresh()
     def initUI(self):   
 
         exitAction = QtGui.QAction(QtGui.QIcon('exit.png'), '&Exit', self)        
@@ -30,8 +31,6 @@ class Main(QtGui.QMainWindow):
         refreshAction = QtGui.QAction(QtGui.QIcon('refresh.png'), '&Refresh', self)
         refreshAction.setShortcut('Ctrl+R')
         refreshAction.triggered.connect(self.refreshClick)
-
-        
 
         menubar = self.menuBar()
 
@@ -56,6 +55,15 @@ class Main(QtGui.QMainWindow):
         self.baseconflayout = BaseConfigLayout()
         self.setCentralWidget(self.baseconflayout)
         self.statusBar().showMessage('Entering configuration...')
+
+    def refresh(self):
+        while True:
+            self.tranRefresh = TransfersLayout()
+            self.statusBar().showMessage('Refreshing...')
+            self.setCentralWidget(self.tranRefresh)
+            time.sleep(3)
+            self.statusBar().showMessage('Up To Date')
+            time.sleep(10)
     def refreshClick(self):
         
         
@@ -139,7 +147,6 @@ class TransfersTable(QTableWidget):
                 x += 1
             n += 1
 
-
 class BaseConfigLayout(QtGui.QWidget):
     def __init__(self):
         super (BaseConfigLayout, self).__init__()
@@ -168,8 +175,20 @@ class BaseConfigLayout(QtGui.QWidget):
         self.tabs.setWindowTitle('Bedpost Configuration')
 
         self.tabs.show()
-    
 
+    
+class LocationsConfigLayout(QtGui.QWidget):
+    
+    def __init__(self):
+        super(LocationsConfigLayout, self).__init__()
+        
+        self.initUI()
+    
+    def initUI(self):
+    
+        hbox = QtGui.QHBoxLayout(self)
+    
+     
 
 class LocationsConfigLayout(QtGui.QWidget):
     
