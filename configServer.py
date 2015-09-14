@@ -38,7 +38,7 @@ def resetDatabase():
         c.execute('''CREATE TABLE locations
         (location_id  INTEGER PRIMARY KEY ASC, location_name text, location_zip text, accronym text)''')                        
         c.execute('''CREATE TABLE transfers
-            (transfer_id INTEGER PRIMARY KEY ASC, cpc text, time_done text, name text, started_at text, status text)''')
+            (transfer_id INTEGER PRIMARY KEY ASC, bed_number text, clinicore_id text, location text)''')
 
 
 class RequestHandler(pyjsonrpc.HttpRequestHandler):
@@ -83,6 +83,35 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
         # print "Selection is done"
         # print "Printing dbout"
         # print dbout
+        conn.close()
+        return row    
+
+    @pyjsonrpc.rpcmethod
+    def startTransfer(self, bedNumber, clinicoreId, location):
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        print bedNumber
+        print clinicoreId
+        print location
+        
+        dbBedNumber = str(bedNumber)
+        dbClinicoreId = str(clinicoreId)
+        dbLocation = str(location)
+
+        c.execute ("INSERT INTO transfers VALUES (null, ?, ?, ?);", (dbBedNumber, dbClinicoreId, dbLocation))        
+        
+        print "CPC Insertion is done"
+        conn.commit()
+
+        last_id = c.lastrowid
+        
+        print "Last ID is set to last inserted row"
+        print last_id
+
+        print "Printing selection"
+        print c.execute("SELECT * FROM transfers WHERE transfer_id = ?", (last_id,))
+        row = c.fetchone()
+
         conn.close()
         return row
     
@@ -220,11 +249,13 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
     
 # Threading HTTP-Server
 http_server = pyjsonrpc.ThreadingHttpServer(
-    server_address = ('localhost', 8080),
+    server_address = ('192.168.1.5', 8080),
     RequestHandlerClass = RequestHandler
 )
+print "resetting database"
+resetDatabase()
 print "Starting HTTP server ..."
-print "URL: http://localhost:8080"
+print "URL: http://192.168.1.5:8080"
 
 try:
     http_server.serve_forever()
