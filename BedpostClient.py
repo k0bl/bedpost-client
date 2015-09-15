@@ -8,7 +8,6 @@ import pyjsonrpc
 import time
 import  subprocess as sp
 import threading
-import DownloadStudy
 import ExtendedQLabel
 
 #this is a test
@@ -48,7 +47,7 @@ class Main(QtGui.QMainWindow):
         self.setMenuWidget(menubar)
         self.setCentralWidget(self.centapp)
         print "central widget set to centapp"
-        self.setGeometry(300, 300, 800, 600)
+        self.setGeometry(300, 300, 1000, 600)
         self.setWindowTitle('Bedpost Client beta 0.0.2')
         self.refreshClick()
         self.show()
@@ -67,7 +66,6 @@ class Main(QtGui.QMainWindow):
             self.tranRefresh = TransfersLayout()
             self.statusBar().showMessage('Refreshing...')
             self.setCentralWidget(self.tranRefresh)
-            time.sleep(3)
             self.statusBar().showMessage('Up To Date')
 
         finally:
@@ -90,7 +88,7 @@ class TransfersLayout(QtGui.QWidget):
         lbl.setPixmap(pixmap)
 
         self.tranTable = TransfersTable(25, 7)
-        self.tranTable.setHorizontalHeaderLabels(('','Bed Number','Clinicore ID','Location','Study Folder', 'Status', 'Download'))
+        self.tranTable.setHorizontalHeaderLabels(('','Bed Number','Clinicore ID','Location',' Study Folder ', ' Status ', 'Download'))
         self.tranTable.resizeColumnsToContents()
         bottom = self.tranTable
         
@@ -105,7 +103,7 @@ class TransfersLayout(QtGui.QWidget):
 
         self.setLayout(hbox)
 
-        self.setGeometry(300, 300, 800, 600)
+        self.setGeometry(300, 300, 1000, 600)
         self.setWindowTitle('QtGui.QSplitter')
         self.show()
 
@@ -125,7 +123,9 @@ class TransfersTable(QTableWidget):
 
     def setTransfers(self):
         http_client = pyjsonrpc.HttpClient(
-            url = "http://192.168.1.7:5050/",
+            url = "http://10.0.3.112:5050/",
+            #url = "http://192.168.1.7:5050/",
+            
             )
         svr_response = http_client.call("returntransfers")
         
@@ -196,7 +196,7 @@ class TransfersTable(QTableWidget):
         startStatus = "Downloading"
         print "starting download"
         self.updateTransferStatus(cid, startStatus)
-        cmd = "start /b winscp.exe /command \"open \"\"bedpost\"\"\" \"get \"\"/srv/bedpost/"+loc+"/"+bed+"/"+fol+"\"\"\""
+        cmd = "start winscp.exe /command \"open \"\"bedpost\"\"\" \"get \"\"/srv/bedpost/"+loc+"/"+bed+"/"+fol+"\"\"\""
         proc = sp.Popen(cmd, shell=True,
                stdout=sp.PIPE, 
                stderr=sp.PIPE)
@@ -207,7 +207,8 @@ class TransfersTable(QTableWidget):
         self.updateTransferStatus(cid, doneStatus)
 
     def updateTransferStatus(self, cid, status):
-        url = "http://192.168.1.7:5050/"
+        url = "http://10.0.3.112:5050/"
+        #url = "http://192.168.1.7:5050/"
         headers = {'content-type': 'application/json'}
 
         # Example echo method
@@ -242,7 +243,7 @@ class imageLayout(QtGui.QWidget):
 def main():
     
     app = QtGui.QApplication(sys.argv)
-    app.setStyleSheet(" QTableWidget::item:focus { background-color:transparent; color:blue;  border: 0px }" )
+    app.setStyleSheet(" QTableWidget::item:focus { background-color:transparent; color:blue;  padding: 10px; border: 0px }" )
     ex = Main()
     sys.exit(app.exec_())
 
